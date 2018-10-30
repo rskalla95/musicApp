@@ -1,3 +1,23 @@
 page-login {
+    #usernameLabel{
+        display: flex;
+        width: 30%;
+        min-width: 300px;
+        margin: auto;
+    }
 
+    #passwordLabel{
+        display: flex;
+        width: 30%;
+        min-width: 300px;
+        margin: auto;
+    }
+
+    #signInButton{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        min-width: 150px;
+        margin: auto;
+    }
 }

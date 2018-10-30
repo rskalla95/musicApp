@@ -7,12 +7,30 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>login</ion-title>
+    <ion-title>Welcome</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
+  <div id="usernameLabel">
+    <ion-item>
+      <ion-label floating>Email/Username</ion-label>
+      <!--input type is currently 'text' will need to be changed to 'email' when we do firebase-->
+      <ion-input type="text" #username></ion-input>
+    </ion-item>
+  </div>
+
+  <div id="passwordLabel">
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="Password" #password></ion-input>
+    </ion-item>
+  </div>
+
+  <div padding id="signInButton">
+    <button block ion-button (click)="signIn()">Sign In</button>
+    <button block ion-button small (click)="register()">Register</button>
+  </div>
 
 </ion-content>
