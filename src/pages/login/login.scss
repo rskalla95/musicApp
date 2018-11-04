@@ -16,6 +16,15 @@ page-login {
     #signInButton{
         display: flex;
         flex-direction: column;
+        padding-top: 10px;
+        width: 20%;
+        min-width: 150px;
+        margin: auto;
+    }
+    #registerButton{
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
         width: 20%;
         min-width: 150px;
         margin: auto;

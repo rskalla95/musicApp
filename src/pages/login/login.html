@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Welcome</ion-title>
+    <ion-title>Sign In</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,8 +15,7 @@
 <ion-content padding>
   <div id="usernameLabel">
     <ion-item>
-      <ion-label floating>Email/Username</ion-label>
-      <!--input type is currently 'text' will need to be changed to 'email' when we do firebase-->
+      <ion-label floating>Email</ion-label>
       <ion-input type="text" #username></ion-input>
     </ion-item>
   </div>
@@ -28,9 +27,12 @@
     </ion-item>
   </div>
 
-  <div padding id="signInButton">
+  <div id="signInButton">
     <button block ion-button (click)="signIn()">Sign In</button>
-    <button block ion-button small (click)="register()">Register</button>
+  </div>
+
+  <div id="registerButton">
+    <button block ion-button small color="light" (click)="register()">Register</button>
   </div>
 
 </ion-content>

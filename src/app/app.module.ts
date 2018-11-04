@@ -9,9 +9,23 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/auth';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+const firebaseAuth = {
+  apiKey: "AIzaSyB9yF1mDloZ6_5KvcMRII7qaoPEX6v1vXc",
+  authDomain: "music-app-bfc4d.firebaseapp.com",
+  databaseURL: "https://music-app-bfc4d.firebaseio.com",
+  projectId: "music-app-bfc4d",
+  storageBucket: "music-app-bfc4d.appspot.com",
+  messagingSenderId: "749331212881"
+};
+
 
 @NgModule({
   declarations: [
@@ -25,7 +39,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseAuth),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
